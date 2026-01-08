@@ -1,4 +1,4 @@
-# embedded_system
+# Embedded-systems
 Indoor Environment &amp; Occupancy Monitoring System
 
 Instrukcja obsługi:

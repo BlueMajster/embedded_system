@@ -1,0 +1,28 @@
+# --- Web & Dashboard ---
+streamlit
+extra_streamlit_components
+streamlit-authenticator
+Flask
+
+# --- Camera & AI ---
+opencv-python
+face-recognition # bardzo długa instalacja
+imutils
+dlib
+pillow
+
+# --- Hardware (Raspberry Pi / Sensors) ---
+gpiozero
+Adafruit-Blinka
+adafruit-circuitpython-bme280
+Adafruit-Blinka-Raspberry-Pi5-Neopixel
+rpi_ws281x
+# picamera2 lepiej instalować z sudo apt install jesli nie ma zainstalowanego
+picamera2
+
+# --- Data & Utilities ---
+pandas
+numpy
+pymongo
+requests
+tqdm

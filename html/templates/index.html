@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systemy Wbudowane</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./source/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./source/images/logo.png" alt="logo">
+        </div>
+        <p><a href="/dashboard">Home</a></p>
+        <p><a href="/wykresy">Security Charts</a></p>
+        <p id="logout"><a href="/logout">Logout</a></p>
+    </nav>
+
+    <div class="layout-container">
+
+        <header>
+            <h1>Indoor Environment & Occupancy Monitoring System</h1>
+        </header>
+
+        <hr id="kreska">
+
+        <main>
+            <article class="glass-card" id="weather">
+                <div class="icons">
+                    <img src="./source/images/temp.png" alt="temperaturaaa">
+                    <p id="temp"></p>
+                </div>
+                <div class="icons">
+                    <img src="./source/images/humid.png" alt="wilgoc">
+                    <p id="hum"></p>
+                </div>
+                <div class="icons">
+                    <img src="./source/images/pressure.png" alt="cisnienie">
+                    <p id="pres"></p>
+                </div>
+                <div class="icons" id="light">
+                    <img src="./source/images/light.png" alt="swiatlo">
+                    <p id="light2"></p>
+                </div>
+            </article>
+
+            <article class="glass-card" id="table-label">
+            <div class="icons">
+                <img src="../source/images/irDrzwi.png" alt="detektor drzwi">
+                <span id="ir-door"></span>
+            </div>
+            <div class="icons">
+                <img src="../source/images/movement.png" alt="detektor ruchu">
+                <span id="pir-sensor"></span>
+            </div>
+            </article>
+            <article class="glass-card" id="charts">
+                <div id="chart1">
+                    <canvas id="temphumChart"></canvas>
+                </div>
+                <div id="chart2">
+                    <canvas id="pressureChart"></canvas>
+                </div>
+            </article>
+            <article class="glass-card" id="camera">
+                <div id="guard-pkp">
+                    <img src="../source/images/pkp.png" alt="guard_pkp" id="policeman">
+                </div>
+                <div id="camera-stream">
+                    <img src="{{ url_for('video') }}" alt="Kamera Pi">
+                </div>
+                <div class="alko-info" style="display: none;">
+                    <img src="../source/images/alcohol.png" alt="Alcohol" id="alcohol-image">
+                    <span id="alcohol-value"></span>
+                </div>
+            </article>
+            <article class="glass-card" id="under-camera">
+                <div>
+                    <p id="people-count"></p>
+                    <p id="detected-names"></p>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>Autors: Kamil Smolak 160093 | Wojciech Rączka 160161 ©®</p>
+        </footer>
+    </div>
+    <script src="./source/script.js"></script>
+</body>
+</html>

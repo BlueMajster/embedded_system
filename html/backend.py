@@ -23,7 +23,7 @@ app.secret_key = 'DNI#$%234nD@#Bf9P$90-$N575nB#u'
 CORR_PASS = "kwakwa5!"
 CORR_USER = "admin5"
 
-password = "f7r82rfa8eCvXpqT"
+password = "not_for_free"
 uri = f"mongodb+srv://BlueSky:{password}@mongolek.vmicgbi.mongodb.net/?appName=Mongolek"
 
 try:
